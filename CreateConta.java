@@ -1,22 +1,27 @@
 
 public class CreateConta {
 	public static void main(String[] args) {
-		Conta primeiraConta = new Conta(); 
-		primeiraConta.saldo = 1000;
-		System.out.println(primeiraConta.saldo);
-		
-// += significa o que ele já tem mais o valor mencionado após, neste caso o 100
-		primeiraConta.saldo += 100; 
-		System.out.println(primeiraConta.saldo);
-		
-//Criando uma segunda conta, dando valor ao seu saldo e mandando imprimir seu valor de saldo
-		
+		Conta primeiraConta = new Conta();
 		Conta segundaConta = new Conta();
-		segundaConta.saldo = 50;
-		System.out.println(segundaConta.saldo);
+		primeiraConta.saldo = 1000;
+		segundaConta.saldo = 2000;
+		System.out.println("Valor atual da conta 1 seria de:" + primeiraConta.saldo + " e da conta 2 seria de: " + segundaConta.saldo);
 		
-		System.out.println("Os valores das duas contas são:" + primeiraConta.saldo + " e " + segundaConta.saldo );
+		primeiraConta.saldo += 100;
+		segundaConta.saldo += 200;
+		System.out.println("Saldo atual da conta 1:"+ primeiraConta.saldo +" e Saldo atual da conta 2: "+ segundaConta.saldo );
 		
+		
+		
+		primeiraConta.agencia = 100;
+		segundaConta.agencia = 200;
+		System.out.println("Agência da conta 1 e da conta 2 respectivamente: "+ primeiraConta.agencia +" e "+ segundaConta.agencia );
+		
+		if(primeiraConta == segundaConta) {
+			System.out.println("Mesmas contas");
+		} else {
+			System.out.println("Contas diferentes");
 		
 	}
-}
+	}
+}	
