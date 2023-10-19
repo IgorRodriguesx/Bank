@@ -24,7 +24,6 @@ public class CreateConta {
 			System.out.println("Mesmas contas");
 		} else {
 			System.out.println("Contas diferentes");
-		
-	}
+		 }
 	}
 }	
