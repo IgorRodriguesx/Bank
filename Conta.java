@@ -53,7 +53,6 @@ public class Conta {
 			System.out.println("Saldo insuficiente ou zerado");
 			return;  
 		}
-			
 		this.agencia = agencia;
 	}
 	public void setTitular(Cliente titular) {
@@ -63,4 +62,3 @@ public class Conta {
 		return titular;
 	}
 }
-
