@@ -1,4 +1,3 @@
-
 public class Conta {
 	
 	//Attributes:
@@ -6,8 +5,17 @@ public class Conta {
 	private int agencia;
 	private int numero;
 	private Cliente titular;
-	
+	private static int total;
+			//static = da classe
 	//Métodos
+	
+	public Conta(int agencia, int numero) {
+		total++;
+		System.out.println("Total de contas: "+ total);
+		this.agencia = agencia;
+		this.numero = numero;
+		System.out.println("Estou criando uma conta de agência "+ this.agencia +" utilizando a número "+ this.numero);
+	}
 	
 	public void deposito(double valor) {
 		this.saldo += valor;
@@ -53,6 +61,7 @@ public class Conta {
 			System.out.println("Saldo insuficiente ou zerado");
 			return;  
 		}
+			
 		this.agencia = agencia;
 	}
 	public void setTitular(Cliente titular) {
@@ -60,5 +69,8 @@ public class Conta {
 	}
 	public Cliente getTitular() {
 		return titular;
+	}
+	public static int getTotal() {
+		return total;
 	}
 }
