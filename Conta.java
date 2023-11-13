@@ -6,7 +6,7 @@ public class Conta {
 	private int numero;
 	private Cliente titular;
 	private static int total;
-			//static = da classe
+	//static = da classe
 	//Métodos
 	
 	public Conta(int agencia, int numero) {
