@@ -8,7 +8,7 @@ public class Conta {
 	private static int total;
 	//static = da classe
 	//Métodos
-	
+
 	public Conta(int agencia, int numero) {
 		total++;
 		System.out.println("Total de contas: "+ total);
@@ -61,7 +61,6 @@ public class Conta {
 			System.out.println("Saldo insuficiente ou zerado");
 			return;  
 		}
-			
 		this.agencia = agencia;
 	}
 	public void setTitular(Cliente titular) {
